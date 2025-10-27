@@ -1,29 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Xetaas Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ap — Links</title>
+    <style>
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 2rem; line-height: 1.5; }
+        nav ul { list-style: none; padding: 0; }
+        nav li { margin: .5rem 0; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .note { color: #555; font-size: .9rem; margin-top: 1rem; }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Xetaas' Blog!!!!</h1>
-        <p>What's he up to?</p>
+        <h1>Links to stuff</h1>
     </header>
+
     <nav>
-        <a href="#">School</a>
-        <a href="#">Projects</a>
-        <a href="#">Gaming</a>
-        <a href="#">Other Interests</a>
-        <a href="#">Silksong (Spoilers!)</a>
+        <ul>
+            <li><a href="./index.html">Index</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./apworlds.html">Archipelago</a></li>
+            <li><a href="./media.html">Media</a></li>
+        </ul>
     </nav>
-    <main>
-        <article>
-            <h2>Welcome to da blog!!!!</h2>
-            <p><small>Posted on September 5th, 2025</small></p>
-            <p>Hi all! I'm Noah (aka Xetaas) and this is a little place for me to share my thoughts, opinions, ideas, projects, hobbies, and more!!!! Super excited to get this blog up and running :)</p>
-        </article>
-    </main>
+
+    <footer>
+        <small>&copy; <span id="year"></span></small>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
