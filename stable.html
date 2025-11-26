@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Game List</title>
+    <style>
+        :root {
+            --bg: #0f1320;
+            --card: #171c2b;
+            --text: #e7ecff;
+            --muted: #a9b1d6;
+            --accent: #6aa9ff;
+            --accent-2: #8be9fd;
+            --border: rgba(255,255,255,0.08);
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            color: var(--text);
+            background: radial-gradient(1200px 600px at 15% 0%, #131933 0%, #0f1320 60%, #0b0e18 100%);
+            font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        .header {
+            background: linear-gradient(180deg, #1b2236 0%, var(--card) 100%);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+        }
+        .title {
+            margin: 0 0 8px;
+            font-size: 28px;
+            letter-spacing: 0.2px;
+        }
+        .subtitle {
+            margin: 0;
+            color: var(--muted);
+            font-size: 15px;
+        }
+        .accent {
+            height: 3px;
+            width: 80px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            border-radius: 999px;
+            margin-top: 12px;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            margin-top: 20px;
+            padding: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr; /* single column */
+            gap: 8px;
+        }
+        li {
+            background: #12182a;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 12px;
+            transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+        }
+        li:hover {
+            transform: translateY(-2px);
+            border-color: rgba(138, 217, 255, 0.35);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+        }
+        @media (max-width: 560px) {
+            .title { font-size: 22px; }
+            .subtitle { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <h1 class="title">Stable Games!!!</h1>
+            <p class="subtitle">Either pick from these, or the ones at <a href="https://archipelago.gg/games" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); transition: color 120ms ease, border-color 120ms ease;" onmouseover="this.style.color='var(--accent-2)'; this.style.borderColor='var(--accent-2)';" onmouseout="this.style.color='var(--accent)'; this.style.borderColor='var(--accent)';">archipelago.gg/games</a></p>
+            <div class="accent"></div>
+        </section>
+
+        <section class="card">
+            <ul>
+                <li>Wario Land 4</li>
+                <li>Psychonauts</li>
+                <li>OpenRCT2</li>
+                <li>Wargroove 2</li>
+                <li>Hades</li>
+                <li>Metroid Prime</li>
+                <li>Final Fantasy IV: Free Enterprise</li>
+                <li>Loonyland: Halloween Hill</li>
+                <li>Banjo-Tooie</li>
+                <li>Gauntlet Legends</li>
+                <li>Peaks of Yore</li>
+                <li>Stick Ranger</li>
+                <li>Earthbound</li>
+                <li>Scooby-Doo! Night of 100 Frights</li>
+                <li>Satisfactory</li>
+                <li>Mega Man 3</li>
+                <li>APQuest</li>
+                <li>Hexcells Infinite</li>
+                <li>A Difficult Game About Climbing</li>
+                <li>Against the Storm</li>
+                <li>Air Delivery</li>
+                <li>ANIMAL WELL</li>
+                <li>Anodyne</li>
+                <li>Another Crab's Treasure</li>
+                <li>An Untitled Story</li>
+                <li>Ape Escape</li>
+                <li>Ape Escape 3</li>
+                <li>Astalon: Tears of the Earth</li>
+                <li>Autopelago</li>
+                <li>Balatro</li>
+                <li>Bomberman Hero</li>
+                <li>Brotato</li>
+                <li>Candy Box 2</li>
+                <li>Castlevania: Harmony of Dissonance</li>
+                <li>Castlevania: Symphony of the Night</li>
+                <li>Cavern of Dreams</li>
+                <li>Cave Story</li>
+                <li>ChecksMate (Chess)</li>
+                <li>Chrono Trigger: Jets of Time</li>
+                <li>ClusterTruck</li>
+                <li>Corn Kidz 64</li>
+                <li>CrossCode</li>
+                <li>Crystalis</li>
+                <li>Crystal Project</li>
+                <li>Cuphead</li>
+                <li>Dark Souls II</li>
+                <li>Deep Rock Galactic</li>
+                <li>Diddy Kong Racing</li>
+                <li>Dome Keeper</li>
+                <li>DORONKO WANKO</li>
+                <li>Dragon Warrior</li>
+                <li>Duke Nukem 3D</li>
+                <li>Dungeon Clawler</li>
+                <li>Ender Lilies: Quietus of the Knights</li>
+                <li>Final Fantasy 6 Worlds Collide</li>
+                <li>Final Fantasy XII: Open World</li>
+                <li>Final Fantasy XII: Trial Mode</li>
+                <li>Final Fantasy Tactics Advance</li>
+                <li>Final Fantasy Tactics A2: Grimoire of the Rift</li>
+                <li>Fire Emblem: The Sacred Stones</li>
+                <li>FNAF World</li>
+                <li>Frogmonster</li>
+                <li>Getting Over It with Bennett Foddy</li>
+                <li>Golden Sun: The Lost Age</li>
+                <li>Grim Dawn</li>
+                <li>The Guardian Legend</li>
+                <li>Guild Wars 2</li>
+                <li>GZDoom</li>
+                <li>Hammerwatch</li>
+                <li>Hatsune Miku: Project Diva Megamix+</li>
+                <li>Here Comes Niko!</li>
+                <li>Iji</li>
+                <li>Isles of Sea and Sky</li>
+                <li>Ittle Dew 2+</li>
+                <li>Jigsaw Puzzle for Archipelago</li>
+                <li>Kabuto Park (Demo)</li>
+                <li>Keep Talking and Nobody Explodes</li>
+                <li>Kindergarten 2</li>
+                <li>Kingdom Hearts: Birth by Sleep</li>
+                <li>Kingdom Hearts: Chain of Memories (GBA)</li>
+                <li>Kingdom Hearts: RE Chain of Memories</li>
+                <li>Kirby 64 - The Crystal Shards</li>
+                <li>Kirby Super Star</li>
+                <li>K-On! After School Live!!</li>
+                <li>League of Legends</li>
+                <li>The Legend of Zelda: A Link Between Worlds</li>
+                <li>The Legend of Zelda: Majora's Mask</li>
+                <li>The Legend of Zelda: Minish Cap</li>
+                <li>The Legend of Zelda: Oracle of Seasons</li>
+                <li>The Legend of Zelda: Phantom Hourglass</li>
+                <li>The Legend of Zelda: Twilight Princess</li>
+                <li>Lil Gator Game</li>
+                <li>Little Witch Nobeta</li>
+                <li>Luigi's Mansion</li>
+                <li>Lunacid</li>
+                <li>Mario is Missing (SNES)</li>
+                <li>Mario Kart: Double Dash</li>
+                <li>MetroCUBEvania</li>
+                <li>Metroid Fusion</li>
+                <li>Metroid: Zero Mission</li>
+                <li>Minishoot' Adventures</li>
+                <li>Minit</li>
+                <li>Momodora: Moonlit Farewell</li>
+                <li>Monster Sanctuary</li>
+                <li>Nine Sols</li>
+                <li>Ori and the Blind Forest</li>
+                <li>osu!</li>
+                <li>Oxygen Not Included</li>
+                <li>Paper Mario 64</li>
+                <li>Paper Mario: The Thousand Year Door</li>
+                <li>Pizza Tower</li>
+                <li>Placid Plastic Duck Simulator</li>
+                <li>Plateup!</li>
+                <li>Pokemon Fire Red and Leaf Green</li>
+                <li>Pokémon Mystery Dungeon: Explorers of Sky</li>
+                <li>PokéPark Wii: Pikachu's Adventure</li>
+                <li>PowerWash Simulator</li>
+                <li>Prodigal</li>
+                <li>Pseudoregalia</li>
+                <li>Rabi-Ribi</li>
+                <li>Rain World</li>
+                <li>Ratchet and Clank 2</li>
+                <li>Reventure</li>
+                <li>Rift of the Necrodancer</li>
+                <li>Rift Wizard</li>
+                <li>Rusted Moss</li>
+                <li>Sentinels of the Multiverse</li>
+                <li>Shadow the Hedgehog</li>
+                <li>Simon Tatham's Portable Puzzle Collection</li>
+                <li>The Simpsons: Hit & Run</li>
+                <li>The Sims 4</li>
+                <li>Sly Cooper and the Thievius Raccoonus</li>
+                <li>Sly 2: Band of Thieves</li>
+                <li>Sonic the Hedgehog</li>
+                <li>Sonic Adventure DX</li>
+                <li>Sonic Heroes</li>
+                <li>Sonic Riders</li>
+                <li>Sonic Rush</li>
+                <li>SoulBlazer</li>
+                <li>Spelunker</li>
+                <li>Spinball</li>
+                <li>Spyro 2: Ripto's Rage</li>
+                <li>Spyro 3: Year of the Dragon</li>
+                <li>Star Fox 64</li>
+                <li>Star Wars: Episode 1 Racer</li>
+                <li>Super Cat Planet</li>
+                <li>Super Junkoid</li>
+                <li>System Shock 2</li>
+                <li>TCG Card Shop Simulator</li>
+                <li>Tetris Attack</li>
+                <li>Tevi</li>
+                <li>Toejam &amp; Earl</li>
+                <li>Touhou Youyoumu ~ Perfect Cherry Blossom</li>
+                <li>Trackmania</li>
+                <li>Turnip Boy Commits Tax Evasion</li>
+                <li>Tyrian / Tyrian 2000</li>
+                <li>Ty The Tasmanian Tiger HD Remaster (PC)</li>
+                <li>Wario Land 1</li>
+                <li>Watery Words</li>
+                <li>Wordipelago</li>
+                <li>XCOM 2: War of the Chosen</li>
+                <li>Yooka-Laylee</li>
+                <li>Yu-Gi-Oh! Dungeon Dice Monsters</li>
+                <li>Yu-Gi-Oh! Forbidden Memories</li>
+                <li>Zelda 2: The Adventure of Link</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
